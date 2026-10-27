@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "https://www.simplemachines.org/xml/modification">
+<modification xmlns="https://www.simplemachines.org/xml/modification" xmlns:smf="https://www.simplemachines.org/">
+	<id>bettersmf:better-http</id>
+	<version>1.0.0</version>
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="before"><![CDATA[
+		// First try to use fsockopen, because it is fastest.
+]]></search>
+			<add><![CDATA[
+		// Better HTTP: prefer cURL for HTTP(S), then preserve SMF's native
+		// fsockopen() path as the fallback if cURL is unavailable or fails.
+		require_once($sourcedir . '/BetterHttp.php');
+		$better_http_data = BetterHttp_FetchCurlFirst($url, $post_data, $redirection_level);
+		if ($better_http_data !== null)
+			return $better_http_data;
+
+]]></add>
+		</operation>
+	</file>
+</modification>

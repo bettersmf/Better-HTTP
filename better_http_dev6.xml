@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "https://www.simplemachines.org/xml/modification">
+<modification xmlns="https://www.simplemachines.org/xml/modification" xmlns:smf="https://www.simplemachines.org/">
+	<id>bettersmf:better-http-dev6-socket-observer</id>
+	<version>1.0.0</version>
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="after"><![CDATA[
+			$fp = @fsockopen(($match[2] ? 'ssl://' : '') . $match[3], empty($match[5]) ? ($match[2] ? 443 : 80) : $match[5], $err, $err, 5);
+]]></search>
+			<add><![CDATA[
+			if (!empty($GLOBALS['better_http_force_native_socket']))
+			{
+				$GLOBALS['better_http_native_socket_attempted'] = true;
+				$GLOBALS['better_http_native_socket_connected'] = !empty($fp);
+				$GLOBALS['better_http_native_socket_error'] = empty($fp) && isset($err) ? (string) $err : '';
+			}
+
+			if (function_exists('BetterHttp_RecordNativeSocketObservation'))
+				BetterHttp_RecordNativeSocketObservation(!empty($fp), empty($fp) && isset($err) ? (string) $err : '');
+]]></add>
+		</operation>
+	</file>
+</modification>

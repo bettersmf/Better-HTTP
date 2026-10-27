@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "https://www.simplemachines.org/xml/package-info">
+<package-info xmlns="https://www.simplemachines.org/xml/package-info" xmlns:smf="https://www.simplemachines.org/">
+    <id>bettersmf:better-http</id>
+    <name>Better HTTP</name>
+    <version>1.0.0</version>
+    <type>modification</type>
+
+
+
+
+    <upgrade from="0.1.0-dev7b,1.0.0-RC1,1.0.0-RC1a" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev7a" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev7" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev6" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev5a" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+        <modification reverse="true">better_http_dev5a.xml</modification>
+        <modification>better_http_dev6.xml</modification>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev5" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+        <modification reverse="true">better_http_dev5.xml</modification>
+        <modification>better_http_dev6.xml</modification>
+    </upgrade>
+
+    <upgrade from="0.1.0-dev1,0.1.0-dev2,0.1.0-dev3,0.1.0-dev4" for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+        <modification>better_http_dev6.xml</modification>
+    </upgrade>
+
+    <install for="2.1 - 2.1.99">
+        <require-file name="Sources/BetterHttp.php" destination="$sourcedir" />
+        <require-file name="Themes/default/BetterHttpAdmin.template.php" destination="$themedir" />
+        <require-file name="Themes/default/languages/BetterHttp.english.php" destination="$languagedir" />
+		<require-file name="Themes/default/images/admin/better_http.png" destination="$themes_dir/default/images/admin" />
+		<require-file name="Themes/default/images/admin/big/better_http.png" destination="$themes_dir/default/images/admin/big" />
+        <code>better_http_install.php</code>
+        <modification>better_http.xml</modification>
+        <modification>better_http_dev6.xml</modification>
+    </install>
+
+    <uninstall for="2.1 - 2.1.99">
+        <code>better_http_uninstall_hooks.php</code>
+        <database>better_http_uninstall_data.php</database>
+        <modification reverse="true">better_http_dev6.xml</modification>
+        <modification reverse="true">better_http.xml</modification>
+        <remove-file name="$sourcedir/BetterHttp.php" />
+        <remove-file name="$themedir/BetterHttpAdmin.template.php" />
+        <remove-file name="$languagedir/BetterHttp.english.php" />
+    
+		<remove-file name="$themes_dir/default/images/admin/better_http.png" />
+		<remove-file name="$themes_dir/default/images/admin/big/better_http.png" />
+	</uninstall>
+</package-info>
